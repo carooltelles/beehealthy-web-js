@@ -1,0 +1,61 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "better-styled-components",
+        "eslint-plugin-import-helpers"
+    ],
+    "rules": {
+        "no-nested-ternary":"warn",
+        "radix":"off",
+        "max-len":["warn", { "code": 300 }], 
+        "no-console": ["error", { "allow": ["warn", "error", "tron"] }],
+        "react/prop-types":"off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "max-classes-per-file": ["off"],
+        "react/no-array-index-key":["off"],
+        "class-methods-use-this": ["off", { "exceptMethods": ["no this"] }],
+        "semi": ["error", "never"],
+        "import/prefer-default-export": "off",
+        "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+        "arrow-parens": ["error", "as-needed"],
+        "import-helpers/order-imports": [
+            "warn",
+            {
+                "newlinesBetween": "always",
+                "groups": [
+                    "/^react/",
+                    "module",
+                    "/^~/",
+                    [
+                        "parent",
+                        "sibling",
+                        "index"
+                    ]
+                ],
+                "alphabetize": {
+                    "order": "asc",
+                    "ignoreCase": true
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+*.config.js
+dist
+logs
+node_modules
+temp
+*.log
+.env
+.vscode/**
+serviceWorker.js
+setupTests.js
+**/package-lock.json
+*.test.js
+**/build/**
