@@ -1,0 +1,163 @@
+.elelment {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.element-main .logo {
+    width: 11em;
+    align-self: center;
+}
+
+.element-main {
+    width: 32%;
+    background: var(--color-background);
+    margin: 2em auto 2em;
+    border-radius: 5px;
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.element-main h1 {
+    text-align: center;
+    font-size: 2.3em;
+    color: var(--bh-darkpurple);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.element-main p {
+    font-size: 1em;
+    color: var(--grayScale-TWO);
+    line-height: 1.5em;
+    margin: 0.8em 0em;
+    text-align: center;
+}
+
+.element-main input[type="password"] {
+    font-size: 1em;
+    color: var(--grayScale-TWO);
+    background: var(--color-background);
+    padding: 1em 0.5em;
+    display: block;
+    width: 95%;
+    outline: none;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    text-align: center;
+    border: 1px solid var(--grayScale-THREE);
+}
+
+.element-main input[type="submit"] {
+    font-size: 1em;
+    color: var(--grayScale-FIVE);
+    background: var(--bh-lightpurple);
+    width: 55%;
+    padding: 0.8em 0em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom: 3px solid var(--bh-darkpurple);
+    display: block;
+    margin: 1.5em auto 0;
+}
+
+.element-main input[type="submit"]:hover {
+    background: var(--bh-darkpurple);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+/*--media quiries start here--*/
+
+@media(max-width:1280px) {
+    .element-main {
+        width: 38%;
+    }
+    .element-main h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media(max-width:1024px) {
+    .element-main {
+        width: 47%;
+    }
+    .element-main .logo {
+        width: 9em;
+    }
+    .element-main h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media(max-width:768px) {
+    .element-main {
+        width: 60%;
+    }
+    .element-main .logo {
+        width: 8em;
+    }
+    .element-main h1 {
+        font-size: 1.6em;
+    }
+    .element-main p {
+        font-size: 0.9em;
+    }
+    .element-main input[type="submit"] {
+        width: 75%;
+        font-size: 0.9em;
+    }
+    .element-main input[type="password"] {
+        font-size: 0.9em;
+        width: 75%;
+    }
+}
+
+@media(max-width:480px) {
+    .element-main {
+        width: 80%;
+        padding: 3em 1.5em;
+    }
+    .element-main .logo {
+        width: 7em;
+    }
+    .element-main input[type="submit"] {
+        font-size: 0.8em;
+        width: 75%;
+    }
+    .element-main input[type="password"] {
+        font-size: 0.8em;
+        width: 75%;
+    }
+}
+
+@media(max-width:320px) {
+    .element-main h1 {
+        font-size: 1.2em;
+    }
+    .element-main {
+        width: 90%;
+        margin: 1em auto 0em;
+        padding: 1.5em 1em;
+    }
+    .element-main p {
+        font-size: 0.7em;
+    }
+    .element-main input[type="submit"] {
+        font-size: 0.9em;
+        width: 75%;
+    }
+    .element-main input[type="password"] {
+        font-size: 0.7em;
+        padding: 0.8em 0.5em;
+    }
+}
+
+/*--media quiries end here--*/

@@ -1,6 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+:root {
+  --color-background: #F0F0F7;
+  --default-danger: #ec053d;
+  --default-success: #04b43c;
+  --default-warn: #fccc04;
+  --grayScale-ONE: #1a1a1a;
+  --grayScale-TWO: #666;
+  --grayScale-THREE: #b6b6b6;
+  --grayScale-FOUR: #dfdfdf;
+  --grayScale-FIVE: #f4f4f4;
+  --bh-orange: #e5822b;
+  --bh-lightpurple: #aa6d93;
+  --bh-darkpurple: #974578;
+  --bh-green: #b8db7c;
+  --bh-whitesmoke: #ededed;
+}
 
-.App{
-  background:#464d5c;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+.App {
+  background: var(--bh-darkpurple);
   min-height: 100vh;
 }
